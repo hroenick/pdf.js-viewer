@@ -18075,7 +18075,7 @@ function PDFJSkeydown(evt) {
     evt.preventDefault();
   }
 }
-window.addEventListener('keydown', PDFJSkeydown());
+window.addEventListener('keydown', PDFJSkeydown);
 
 window.addEventListener('beforeprint', function beforePrint(evt) {
   PDFViewerApplication.beforePrint();
