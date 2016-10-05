@@ -17836,7 +17836,7 @@ window.addEventListener('click', function click(evt) {
   }
 }, false);
 
-window.addEventListener('keydown', function keydown(evt) {
+function PDFJSkeydown(evt) {
   if (OverlayManager.active) {
     return;
   }
@@ -18074,7 +18074,8 @@ window.addEventListener('keydown', function keydown(evt) {
   if (handled) {
     evt.preventDefault();
   }
-});
+}
+window.addEventListener('keydown', PDFJSkeydown());
 
 window.addEventListener('beforeprint', function beforePrint(evt) {
   PDFViewerApplication.beforePrint();
